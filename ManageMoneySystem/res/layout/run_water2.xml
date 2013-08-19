@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_title" >
+
+        <Button
+            android:id="@+id/btnWReturn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_return_style"
+            android:padding="5dp"
+            android:text="@string/btn_return"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnReduceYear"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_year_reduce_style"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnAddYear"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_year_add_style"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnIncoming"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_wtype_focus"
+            android:text="@string/tv_incoming" />
+
+        <Button
+            android:id="@+id/btnOutgoing"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_wtype_unfocus"
+            android:text="@string/tv_outgoing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/blank"
+        android:textIsSelectable="true" />
+
+</LinearLayout>

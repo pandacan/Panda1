@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/forms_bg"
+    android:gravity="center|center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人记账系统"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</LinearLayout>

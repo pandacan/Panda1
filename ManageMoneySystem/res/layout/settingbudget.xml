@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_title"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnBReturn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_return_style"
+            android:padding="5dp"
+            android:text="@string/btn_return"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvaddbudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_settingbudget"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnBudgetSave"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_budsave_style"
+            android:padding="5dp"
+            android:text="@string/btn_save"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvBMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/tv_BMoney"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/etBInitial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_initial"
+                android:gravity="right|center"
+                android:inputType="number"
+                android:padding="5dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvBPurpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/tv_BPurpose"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/tvBPurposeInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="@string/tv_pleaseSelect" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvBStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/tv_BStartTime"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/tvBStartTimeInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="right"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvBEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/tv_BEndTime"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/tvBEndTimeInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="right"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvBPayouted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/tv_payouted"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/tvBPayoutedInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="￥0.00"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

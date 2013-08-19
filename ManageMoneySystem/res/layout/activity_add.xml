@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_title"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_return_style"
+            android:padding="5dp"
+            android:text="@string/btn_return"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvNewIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_newIO"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvAType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:text="@string/tv_type"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/btnIncoming"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_incoming_style"
+            android:text="@string/tv_incoming" />
+
+        <Button
+            android:id="@+id/btnOutgoing"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_outgoing_style"
+            android:text="@string/tv_outgoing" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvMMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/tv_money"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/etInitial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:gravity="right|center"
+                    android:inputType="number" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvPurpose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/tv_purpose"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/etPurpose"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    android:inputType="none" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/tv_date"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    android:inputType="date|datetime" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/tv_note"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:gravity="right"
+                    android:lines="3" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_add_style"
+            android:text="@string/btn_save" />
+
+        <Button
+            android:id="@+id/btnAddAgain"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_addagain_style"
+            android:text="@string/btn_addAgain"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_title"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnRegReturn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@drawable/btn_return_style"
+            android:padding="5dp"
+            android:text="@string/btn_return"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_register"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/tvRegAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/tv_ID" />
+
+            <EditText
+                android:id="@+id/etRegAccountInfo"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:gravity="right"
+                android:padding="10dp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvRegPassWord"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/tv_passWord" />
+
+            <EditText
+                android:id="@+id/etRegPassWordInfo"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:gravity="right"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvRegPassWordCIF"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="@string/tv_cifpassWord" />
+
+            <EditText
+                android:id="@+id/etRegPassWordCIFInfo"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnRegCIFReg"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/btn_Nowregister" />
+    </FrameLayout>
+
+</LinearLayout>
